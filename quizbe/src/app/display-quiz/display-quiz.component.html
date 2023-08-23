@@ -1,0 +1,27 @@
+<div>
+    <button type="Submit" (click)="conductQuiz()">Conduct Quiz</button>
+</div>
+
+
+<div>
+    <table>
+        <th>Question title</th>
+        <th>option1</th>
+        <th>option2</th>
+        <th>option3</th>
+        <th>option4</th>
+        <tr *ngFor="let d of data">
+            <td>{{d.questionTitle}}</td>
+            <td>{{d.option1}}</td>
+            <td>{{d.option2}}</td>
+            <td>{{d.option3}}</td>
+            <td>{{d.option4}}</td>
+        </tr>
+    </table>
+</div>
+
+<!-- <div> {{questionlist[currentQuestionNumber].questionTitle}}</div>
+ <div>{{questionlist[currentQuestionNumber].option1}}<br>
+{{questionlist[currentQuestionNumber].option2}}<br>
+ {{questionlist[currentQuestionNumber].option3}}<br>
+ {{questionlist[currentQuestionNumber].option4}}</div> -->

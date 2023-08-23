@@ -1,0 +1,20 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    activity
+                </th>
+                <th>
+                   type
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let us of user">
+                <td>{{us.type}}</td>
+                <td>{{us.key}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

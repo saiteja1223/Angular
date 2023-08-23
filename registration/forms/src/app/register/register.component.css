@@ -1,0 +1,9 @@
+.container{
+    width: 350px;
+    height: 450px;
+    margin-top: 20px;
+    background-color: azure;
+}
+#delete1{
+    margin-left: 74px;
+}

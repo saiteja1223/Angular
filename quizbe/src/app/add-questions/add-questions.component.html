@@ -1,0 +1,39 @@
+<div class="add-question-form">
+    <h1>Add the Question</h1>
+    <form  [formGroup]="form"  >
+    <!-- <input type="text" formControlName="id" > -->
+    <div>
+        <label for="Question">Question Title</label><br>
+    <input type="text" formControlName="questionTitle">
+    </div>
+    <div>
+        <label for="option1">Option1</label><br>
+    <input type="text" formControlName="option1">
+    </div>
+    <div>
+        <label for="option2">Option2</label><br>
+    <input type="text" formControlName="option2">
+    </div>
+    <div>
+        <label for="option3">Option3</label><br>
+    <input type="text" formControlName="option3">
+    </div>
+    <div>
+        <label for="option4">Option4</label><br>
+    <input type="text" formControlName="option4">
+    </div>
+    <div>
+        <label for="rightAnswer">Right Answer</label><br>
+    <input type="text" formControlName="rightAnswer">
+    </div>
+    <div>
+        <label for="difficultylevel">Difficultylevel</label><br>
+    <input type="text" formControlName="difficultylevel">
+    </div>
+    <div>
+        <label for="category">Category</label><br>
+    <input type="text" formControlName="category">
+    </div>
+    <button type="submit" (click)="onsubmit()">Add</button>
+</form>
+</div>

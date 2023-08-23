@@ -1,0 +1,34 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    gap:30px;
+}
+.sub-main1{
+    background-color: beige;
+}
+.sub-main2{
+    background-color: azure;
+}
+.question-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .question-table th,
+  .question-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .question-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  /* Style alternate rows */
+  .question-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }

@@ -1,0 +1,17 @@
+.p-input-icon-right{
+    padding: 20px;
+    background-color: bisque;
+    width: 40%;
+    height: 500px;
+}
+.addTodo{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 94px;
+    background-color: ghostwhite;
+    width:495px;
+    height: 628px;
+    padding: 20px;
+    margin-left: 40px;
+}

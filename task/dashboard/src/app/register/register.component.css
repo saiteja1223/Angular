@@ -1,0 +1,18 @@
+form{
+    width:500px;
+}
+#sbutton{
+   float:right
+}
+.d-grid{
+    margin-left: 164px;
+    margin-right: -50px
+}
+.maindiv{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    /* gap: 124px; */
+    padding: 111px;
+    margin-left: 267px;
+}

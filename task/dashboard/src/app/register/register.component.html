@@ -1,0 +1,72 @@
+<div class="maindiv">
+<form class="border border-dar" #registerForm = "ngForm" id="fom" (ngSubmit)="isfin(registerForm.value)">
+    <div class="row g-0">
+        <div class="col text-center p-2 mb-3 bg-light">
+            <span class="fs-3">Register</span>
+        </div>
+    </div>  
+    <div class="row">
+        <div class="col mb-3">
+            <label for="firstname" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstname">
+
+        </div>
+        <div class="col mb-3">
+            <label for="lastname" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastname">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="email"  class="form-label">Email address</label>
+            <input type="email" name="email" ngModel class="form-control" id="email">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="mobile" class="form-label" >Mobile Number</label>
+            <input type="text" class="form-control" id="mobile">
+
+        </div>
+        <div class="col ps-3 mb-3">
+            <div class="m-1">Gender</div>
+            <div class="form-check form-check-inline">
+                <input type="ratio" class="form-check-input"  id="male">
+                <label class="form-check-label " for="male">Male</label>
+
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="ratio" class="form-check-input"  id="female">
+                <label class="form-check-label " for="female">Female</label>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="pwd" class="form-label">Password</label>
+            <input type="password" name="password" ngModel class="form-control" id="pwd">
+
+        </div>
+        <div class="col mb-3">
+            <label for="dashboard" class="form-label">Dashbord</label>
+            <input type="checkbox" name="isChecked" ngModel id="dashword">
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-6 ofset-3">
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary" id="sbutton">submit</button>
+
+            </div>
+
+        </div>
+
+    </div>
+</form>
+</div>

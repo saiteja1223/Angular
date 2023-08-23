@@ -1,0 +1,19 @@
+<div>
+    <h1>Launch The Quiz</h1>
+<form [formGroup]="ques">
+    <div>
+        <label for="title">Title of Quiz</label><br>
+    <input type="text" formControlName="title">
+    </div>
+    <div>
+        <label for="category">Category</label><br>
+    <input type="text" formControlName="category">
+    </div>
+    <div>
+        <label for="numQ">No Of Questions</label><br>
+    <input type="text" formControlName="numQ">
+    </div>
+    <button type="submit" (click)="launchQuiz()">submit</button>
+</form>
+</div>
+

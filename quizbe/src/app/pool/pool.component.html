@@ -1,0 +1,36 @@
+<div class="main">
+    <div class="sub-main1">
+       <h1>Add the question</h1>
+        <button type="button" (click)="add()">Add</button>
+    </div>
+    <div class="sub-main2">
+        <h1>Create the Quiz</h1>
+        <button type="button" (click)="create()">Create</button>
+
+    </div>
+</div>
+<div>
+    <button type="submit" (click)="display()">view</button>
+</div>
+<table  class="question-table">
+    <tr>
+      <th>Id</th>
+      <th>Question title</th>
+      <th>Option 1</th>
+      <th>Option 2</th>
+      <th>Option 3</th>
+      <th>Option 4</th>
+      <th>Category</th>
+    </tr>
+    <tr *ngFor="let d of data">
+      <td>{{d.id}}</td>
+      <td>{{d.questionTitle}}</td>
+      <td>{{d.option1}}</td>
+      <td>{{d.option2}}</td>
+      <td>{{d.option3}}</td>
+      <td>{{d.option4}}</td>
+      <td>{{d.category}}</td>
+      
+    </tr>
+   
+  </table>

@@ -1,0 +1,29 @@
+<form [formGroup]="register" (ngSubmit)="submit()">
+   <input type="text" ngModel  name="name" formControlName="name1" class="form-control">
+   <input type="text" ngModel   formControlName="age" class="form-control">
+   <button type="submit" >Submit</button>
+   <button (click)="nav()">show</button>
+</form>
+<button (click)="increament()"> count</button>
+<app-page-b [data]="data1" >
+   <h1>this is ng-content</h1>
+</app-page-b>
+<div class="info_box" [ngClass]="{activeInfo:!showWarning}"> 
+   <div class="info-title"><span>Some Rules of this Quiz</span></div>
+   <div class="info-list" *ngIf="a">
+       <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+       <div class="info">2. Once you select your answer, it can't be undone.</div>
+       <div class="info">3. You can't select any option once time goes off.</div>
+       <div class="info">4. You can't exit from the Quiz Once Started.</div> 
+   </div>
+   <div *ngIf="b">
+      <p>Is it working</p>
+   </div>
+   <div class="buttons">
+      <button class="restart" (click)="startQuiz()">Continue</button>
+   </div>
+</div>  
+<button class="quit" (click)="run()">Exit Quiz</button><br><br>
+<label>Write hear</label>
+<input type="text" [(ngModel)]="name">
+<button (click)="sendMessege()">send</button>

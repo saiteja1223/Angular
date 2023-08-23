@@ -1,0 +1,30 @@
+<div class="container mt-5">
+  
+    <h2>Angular Interns team </h2>
+    
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>P.no</th>
+            <th>Manager</th>
+            <th>Project</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let us of userList">
+          <td>{{us.id}}</td>
+        <td>{{us.Name}}</td>
+        <td>{{us.Role}}</td>
+        <td>{{us.Pno}}</td>
+        <td>{{us.Manager}}</td>
+        <td>{{us.Project}}</td>
+      
+        </tr>
+        
+          
+      </tbody>
+    </table>
+  </div>

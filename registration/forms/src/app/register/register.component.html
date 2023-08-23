@@ -1,0 +1,48 @@
+<div class="container">
+
+    <form [formGroup] = "frmRegister" (ngSubmit)="OnSubmit()">
+  
+    <div class="form=group">
+  
+      <label for="name">Name</label>
+  
+      <input type="text" class="form-control"  id="name"formControlName="name">
+      <!-- <div class="form-text text-danger" *ngIf="name1.error?.['required']"></div> -->
+  
+      <span *ngIf="frmRegister.controls['name'].errors && !frmRegister.controls['name'].pristine">Name should start with capital letter </span></div>
+  
+    <br>
+  
+      <div class="form-group">
+  
+        <label for="email">Email</label>
+  
+        <input type="text" class="form-control"id="email"formControlName="email">
+  
+        <span *ngIf="frmRegister.controls['email'].errors && !frmRegister.controls['email'].pristine">Email is Invalid</span>
+  
+        </div><br>
+  
+        <div class="form-group">
+  
+          <label for="password">Password</label>
+  
+          <input type="password" class="form-control"id="password"formControlName="password">
+  
+          <span *ngIf="frmRegister.controls['password'].errors && !frmRegister.controls['password'].pristine">password is not strong</span>
+  
+          </div><br>
+          <div class="form-group">
+  
+            <label for="pone_no">Phone Number</label>
+  
+            <input type="text" class="form-control"id="pone_no"formControlName="pone_no">
+  
+            <div  class="form-text text-danger" *ngIf="frmRegister.controls['pone_no'].errors && (!frmRegister.controls['pone_no'].pristine||frmRegister.controls['pone_no'].dirty)">Phone number should be minimum of 10 characters</div>
+  
+            </div><br><br>
+  
+        <button type="submit" class="btn btn-primary" [disabled]="!frmRegister.valid">submit</button>
+        <button type="button" class="btn btn-danger" id="delete1" (click)="isdelete()">Delete</button>
+  
+    </form>

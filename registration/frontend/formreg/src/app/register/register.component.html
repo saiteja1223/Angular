@@ -1,0 +1,47 @@
+<div class="container">
+
+    <form [formGroup] = "frmRegister" (ngSubmit)="OnSubmit()">
+  
+    <div class="form=group">
+  
+      <label for="name">Name</label>
+  
+      <input type="text" class="form-control" id="name"formControlName="name">
+  
+      <span *ngIf="frmRegister.controls['name'].errors && !frmRegister.controls['name'].pristine">Invalid</span></div>
+  
+    <br>
+  
+      <div class="form-group">
+  
+        <label for="email">Email</label>
+  
+        <input type="text" class="form-control"id="email"formControlName="email">
+  
+        <span *ngIf="frmRegister.controls['email'].errors && !frmRegister.controls['email'].pristine">Invalid</span>
+  
+        </div><br>
+  
+        <div class="form-group">
+  
+          <label for="password">Password</label>
+  
+          <input type="password" class="form-control"id="password"formControlName="password">
+  
+          <span *ngIf="frmRegister.controls['password'].errors && !frmRegister.controls['password'].pristine">Invalid</span>
+  
+          </div><br>
+          <div class="form-group">
+  
+            <label for="pone_no">Phone Number</label>
+  
+            <input type="text" class="form-control"id="pone_no"formControlName="pone_no">
+  
+            <span *ngIf="frmRegister.controls['pone_no'].errors && !frmRegister.controls['pone_no'].pristine">Invalid</span>
+  
+            </div><br><br>
+  
+        <button type="submit" class="btn btn-primary" [disabled]="!frmRegister.valid">submit</button>
+        <button type="button" class="btn btn-danger" id="delete1" >Delete</button>
+  
+    </form>

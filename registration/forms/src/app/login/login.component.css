@@ -1,0 +1,10 @@
+.image{
+     
+    background-image:url('/assets/img1.jpg');
+    background-position:50% 50%;
+    background-size: cover;
+  }
+  #regis{
+    margin-left: 15em;
+    margin-top: 30em;
+  }

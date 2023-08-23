@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "Name":"sai",
+        "Role":"FSWD",
+        "Pno":"8096394352",
+        "Manager":"Ram sir",
+        "Project":"NULL"
+
+    },
+    {
+        "id":2,
+        "Name":"rajesh",
+        "Role":"FSWD",
+        "Pno":"4596394352",
+        "Manager":"Ram sir",
+        "Project":"NULL"
+
+    },
+    {
+        "id":3,
+        "Name":"ganesh",
+        "Role":"FSWD",
+        "Pno":"6796394352",
+        "Manager":"Ram sir",
+        "Project":"NULL"
+
+    }
+]
